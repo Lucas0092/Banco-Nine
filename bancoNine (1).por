@@ -23,7 +23,7 @@ programa
 			limpa()
 
 		
-		se(escolhaMenu == 1){ //Conta poupança
+		se(escolhaMenu == 1){ //Conta poupanﾃｧa
 			para(inteiro i = 1; i <= limiteLoop; i++){
 				escreva("\nCONTA: 01234 - BANCO NINE")
 				escreva("\nCONTA POUPANÇA")
@@ -31,35 +31,35 @@ programa
 
 				escreva("\nSALDO: "+saldo1)
 
-				//Fluxo credito e débito
+				//Fluxo credito e dﾃｩbito
 				escreva("\n-----------------------")
-				escreva("\n1 - Crédito\n")
-				escreva("\n2 - Débito\n")
+				escreva("\n1 - Credito\n")
+				escreva("\n2 - Debito\n")
 				escreva("\n-----------------------")
 				escreva("\nDigite a opção desejada: ")
 				leia(escolhaCredDeb)
 
 				se (escolhaCredDeb == 1){
-					escreva("\nDigite o valor de crédito: \n")
+					escreva("\nDigite o valor de credito: \n")
 					leia(credito)
 					saldo1+=credito
 					escreva("\n-----------------------")
 					limpa()
 				} senao se (escolhaCredDeb == 2){
-					escreva("\nDigite o valor de débito: \n")
+					escreva("\nDigite o valor de debito: \n")
 					leia(debito)
 					saldo1-=debito
 					escreva("\n-----------------------")
 					limpa()
 				} senao {
-					escreva("\nOPERAÇÃO INVÁLIDA")
+					escreva("\nOPERAÇÃO INVALIDA")
 					escreva("\n-----------------------")
 				}
 
-				//fluxo conta poupança
+				//fluxo conta poupanﾃｧa
 				diaAniversario = 18
 
-				escreva("\nInsira o dia de hoje (apenas os 2 primeiros dígitos): ")
+				escreva("\nInsira o dia de hoje (apenas os 2 primeiros digitos): ")
 				leia(respostaDia)
 
 				se (diaAniversario == respostaDia){
@@ -67,7 +67,7 @@ programa
 
 					escreva("Reajuste de saldo + 0.05%")
 				} senao {
-					escreva("\nTenha um ótimo dia!")
+					escreva("\nTenha um otimo dia!")
 				}
 						
 				escreva("\nSALDO ATUAL: "+saldo1+"\n")
@@ -84,26 +84,26 @@ programa
 				escreva("\nSALDO: "+saldo2)
 
 				escreva("\n-----------------------")
-				escreva("\n1 - Crédito\n")
-				escreva("\n2 - Débito\n")
+				escreva("\n1 - Credito\n")
+				escreva("\n2 - Debito\n")
 				escreva("\n-----------------------")
 				escreva("\nDigite a opção desejada: ")
 				leia(escolhaCredDeb)
 
 				se (escolhaCredDeb == 1){
-					escreva("\nDigite o valor de crédito: \n")
+					escreva("\nDigite o valor de credito: \n")
 					leia(credito)
 					saldo2+=credito
 					escreva("\n-----------------------")
 					limpa()
 				} senao se (escolhaCredDeb == 2){
-					escreva("\nDigite o valor de débito: \n")
+					escreva("\nDigite o valor de debito: \n")
 					leia(debito)
 					saldo2-=debito
 					escreva("\n-----------------------")
 					limpa()
 				} senao {
-					escreva("\nOPERAÇÃO INVÁLIDA")
+					escreva("\nOPERAÇÃO INVALIDA")
 					escreva("\n-----------------------")
 				}
 
@@ -116,19 +116,19 @@ programa
 						cheque=cheque-1
 						saldo2-=30.00
 						escreva("\nSeu talão foi solicitado com sucesso.")
-						//não para de ofertar quando acaba????
+						//nﾃ｣o para de ofertar quando acaba????
 						pare
 					} senao se (respCheque == "N" ou respCheque == "n"){
-						escreva("\nTenha um ótimo dia")
+						escreva("\nTenha um otimo dia")
 						pare
 					} senao {
-						escreva("\nOPERAÇÃO INVÁLIDA")
+						escreva("\nOPERAÇÃO INVALIDA")
 						escreva("\nSolicitação negada")
 						pare
 					}
 				}			
 
-				//perguntar se quer cheque (3 opções) -> enquanto (cheque <= 3)
+				//perguntar se quer cheque (3 opﾃｧﾃｵes) -> enquanto (cheque <= 3)
 				//se quiser cheque, saldo-30$
 
 				escreva("\nSALDO ATUAL: "+saldo2+"\n")
@@ -142,46 +142,46 @@ programa
 				escreva("\n-----------------------")
 
 				escreva("\nSALDO: "+saldo3)
-				escreva("\nCRÉDITO ESPECIAL: "+lis)
+				escreva("\nCREITO ESPECIAL: "+lis)
 
 				escreva("\n-----------------------")
-				escreva("\n1 - Crédito\n")
-				escreva("\n2 - Débito\n")
+				escreva("\n1 - Credito\n")
+				escreva("\n2 - Debito\n")
 				escreva("\n-----------------------")
 				escreva("\nDigite a opção desejada: ")
 				leia(escolhaCredDeb)
 
 				se (escolhaCredDeb == 1){
-					escreva("\nDigite o valor de crédito: \n")
+					escreva("\nDigite o valor de credito: \n")
 					leia(credito)
 				
 					se((credito > saldo3) e (lis < 1000.00)){ //se ta devendo cheque especial e ta sobrando dinheiro
 						diferencaCred = 1000.00 - lis //quanto ta devendo de cheque?
 						//diferencaCred2 = credito - diferencaCred2//
 						//lis+=diferencaCred2	
-						//não ta distribuindo certo					
+						//nﾃ｣o ta distribuindo certo					
 					}
 					saldo3+=credito
 					escreva("\n-----------------------")
 					limpa()
 				} senao se (escolhaCredDeb == 2){
-					escreva("\nDigite o valor de débito: \n")
+					escreva("\nDigite o valor de debito: \n")
 					leia(debito)
 
 					se (debito > saldo3+lis){
-						escreva("OPERAÇÃO INVÁLIDA")
+						escreva("OPERAÇÃO INVALIDA")
 					} senao se (debito > saldo3){
 							diferenca = debito-saldo3
 							lis=lis-diferenca
 							saldo3+=diferenca
 							saldo3-=debito
 					} senao {
-						escreva("OPERAÇÃO INVÁLIDA")
+						escreva("OPERAÇÃO INVALIDA")
 					}
 					escreva("\n-----------------------")
 					limpa()
 				} senao {
-					escreva("\nOPERAÇÃO INVÁLIDA")
+					escreva("\nOPERAÇÃO INVALIDA")
 					escreva("\n-----------------------")
 				}
 
@@ -189,9 +189,9 @@ programa
 
 				
 				//se debito > saldo+saldoLimite {
-				//saldoLimite - saldo = diferença
-				//saldoLimite -= diferença
-				//saldo += diferença
+				//saldoLimite - saldo = diferenﾃｧa
+				//saldoLimite -= diferenﾃｧa
+				//saldo += diferenﾃｧa
 				//saldo - debito
 				}
 			
@@ -199,30 +199,30 @@ programa
 		} senao se (escolhaMenu == 4){ //Conta empresa
 			para(inteiro i = 1; i <= 2; i++){
 				escreva("\nCONTA: 01234 - BANCO NINE")
-				escreva("\nCONTA POUPANÇA")
+				escreva("\nCONTA EMPRESA")
 				escreva("\n-----------------------")
 
 				escreva("\nSALDO: "+saldo4)
 
 				escreva("\n-----------------------")
-				escreva("\n1 - Crédito\n")
-				escreva("\n2 - Débito\n")
+				escreva("\n1 - Credito\n")
+				escreva("\n2 - Debito\n")
 				leia(escolhaCredDeb)
 
 				se (escolhaCredDeb == 1){
-					escreva("\nDigite o valor de crédito: \n")
+					escreva("\nDigite o valor de credito: \n")
 					leia(credito)
 					saldo4+=credito
 					escreva("\n-----------------------")
 					limpa()
 				} senao se (escolhaCredDeb == 2){
-					escreva("\nDigite o valor de débito: \n")
+					escreva("\nDigite o valor de debito: \n")
 					leia(debito)
 					saldo4-=debito
 					escreva("\n-----------------------")
 					limpa()
 				} senao {
-					escreva("\nOPERAÇÃO INVÁLIDA")
+					escreva("\nOPERAÇÃO INVALIDA")
 					escreva("\n-----------------------")
 				}
 
@@ -233,30 +233,30 @@ programa
 		} senao se (escolhaMenu == 5){ //Conta estudante
 			para(inteiro i = 1; i <= 2; i++){
 				escreva("\nCONTA: 01234 - BANCO NINE")
-				escreva("\nCONTA POUPANÇA")
+				escreva("\nCONTA ESTUDANTIL")
 				escreva("\n-----------------------")
 
 				escreva("\nSALDO: "+saldo5)
 
 				escreva("\n-----------------------")
-				escreva("\n1 - Crédito\n")
-				escreva("\n2 - Débito\n")
+				escreva("\n1 - Credito\n")
+				escreva("\n2 - Debito\n")
 				leia(escolhaCredDeb)
 
 				se (escolhaCredDeb == 1){
-					escreva("\nDigite o valor de crédito: \n")
+					escreva("\nDigite o valor de credito: \n")
 					leia(credito)
 					saldo5+=credito
 					escreva("\n-----------------------")
 					limpa()
 				} senao se (escolhaCredDeb == 2){
-					escreva("\nDigite o valor de débito: \n")
+					escreva("\nDigite o valor de debito: \n")
 					leia(debito)
 					saldo5-=debito
 					escreva("\n-----------------------")
 					limpa()
 				} senao {
-					escreva("\nOPERAÇÃO INVÁLIDA")
+					escreva("\nOPERAÇÃO INVALIDA")
 					escreva("\n-----------------------")
 				}
 
@@ -267,7 +267,7 @@ programa
 		} senao se (escolhaMenu == 6){ //Sair
 			escreva("\nOPERAÇÃO FINALIZADA")
 		} senao {
-			escreva("\nOPERAÇÃO INVÁLIDA")
+			escreva("\nOPERAÇÃO INVALIDA")
 		}
 	}
 }
@@ -276,7 +276,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 550; 
+ * @POSICAO-CURSOR = 7345; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
